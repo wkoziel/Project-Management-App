@@ -5,9 +5,24 @@ const Header = () => {
     <div className='header'>
       <div className='header-left'>
         <div className='header-icon'></div>
-        <p className='header-name'>Project Manager</p>
         <div className='search-bar'>
-          <input></input>
+          <input placeholder='Search' />
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='20'
+            height='20'
+            fill='none'
+            stroke='currentColor'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            class='feather feather-search'
+            viewBox='0 0 24 24'
+          >
+            <defs></defs>
+            <circle cx='11' cy='11' r='8'></circle>
+            <path d='M21 21l-4.35-4.35'></path>
+          </svg>
         </div>
       </div>
       <div className='header-right'>

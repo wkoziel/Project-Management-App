@@ -13,6 +13,7 @@ body {
   justify-content: center;
   background-color: #f3f6fd;
   color: #1f1c2e;
+  transition: 0.2s;
 }
 
 /* App */
@@ -27,24 +28,45 @@ body {
 
 .app-wrapper {
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 12fr 6fr;
 }
 
 /* Header */
 .header {
-  background: red;
   display: flex;
   position: relative;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
+}
+
+.header input {
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-bar {
+  padding: 0 24px;
+  height: 40px;
+  width: 480px;
+  border-radius: 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar svg {
+  justify-content: flex-end;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-grow: 1;
 }
 
@@ -54,21 +76,40 @@ body {
   justify-content: flex-end;
 }
 
+.header-right svg {
+  width: 30px;
+  height: 30px;
+  margin: 16px 0;
+  color: #1f1c2e;
+}
+
 /* Navbar */
 .navbar {
-  background: chartreuse;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  align-items: center;
+}
+
+.navbar svg {
+  width: 40px;
+  height: 40px;
+  margin: 16px 0;
+  color: #1f1c2e;
 }
 
 /* Project */
 .projects {
-  background: darkblue;
+  background: #fff;
+  border-radius: 30px;
+  padding: 32px 32px 0 32px;
 }
 
 /* Massages */
 .messages {
-  background: darkorange;
+  background: #fff;
+  border-radius: 30px;
+  margin: 0 30px;
+  padding: 32px 32px 0 32px;
 }
